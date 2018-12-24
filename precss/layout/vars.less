@@ -1,0 +1,31 @@
+// color
+@pink: #ec1e79;
+@text: #221f1f;
+@background: #27273e;
+
+//var fonts
+.font(@fontName; @urlName: @fontName; @weight: normal; @style: normal) {
+  font-family: '@{fontName}';
+  src: url('../fonts/@{urlName}/@{urlName}.eot');
+  src: url('../fonts/@{urlName}/@{urlName}.eot#iefix') format('embedded-opentype'),
+  url('../fonts/@{urlName}/@{urlName}.woff') format('woff'),
+    url('../fonts/@{urlName}/@{urlName}.ttf') format('truetype'),
+    url('../fonts/@{urlName}/@{urlName}.svg') format('svg');
+    font-weight: @weight;
+    font-style: @style;
+}
+
+//fonts
+@GothamPro: 'GothamPro';
+@GothamPro-Bold: '@{GothamPro}-Bold';
+@GothamPro-Light: '@{GothamPro}-Light';
+@GothamPro-Italic: '@{GothamPro}-Italic';
+
+@OpenSans: 'OpenSans';
+@OpenSans-Bold: '@{OpenSans}-Bold';
+
+@Roboto: 'Roboto';
+@Roboto-Light: '@{Roboto}-Light';
+@Roboto-Bold: '@{Roboto}-Bold';
+
+@MyriadPro: 'MyriadPro';

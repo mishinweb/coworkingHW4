@@ -1,0 +1,91 @@
+@import "../layout/vars.less";
+.footer {
+  background: @background;
+  position: relative;
+  &__wrap {
+    display: flex;
+    align-items: center;
+    min-height: 77px;
+  }
+  &__copyright {
+    flex: 0 1 270px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    &-link {
+      font-weight: bold;
+      text-decoration: underline;
+      color: inherit;
+    }
+    &-author {
+      font-weight: bold;
+    }
+  }
+  &__logo {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    &-link {
+      margin-left: -99px;
+    }
+  }
+  &__social {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 172px;
+    &-title {
+      text-align: right;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 9px;
+    }
+    &-icons {
+      display: flex;
+      ;
+    }
+    &-icon {
+      margin-right: 10px;
+      height: 20px;
+      width: 20px;
+      display: block;
+      background: #d4d4d8 url('../img/icons/soc-sprite.png') 0  0 no-repeat;
+      border-radius: 50%;
+      transition: .5s;
+      &-vk{
+        &:hover{
+          background: @pink url('../img/icons/soc-sprite.png') 0  0 no-repeat;
+        }    
+      }
+      &-fb{
+        background-position-x: -100px;
+        &:hover{
+          background: @pink url('../img/icons/soc-sprite.png') -100px  0 no-repeat;       
+        }   
+      }
+      &-google{
+        background-position-x: -200px;
+        &:hover{
+          background: @pink url('../img/icons/soc-sprite.png') -200px  0 no-repeat;       
+        } 
+      }
+      &-twitter{
+        background-position-x: -300px;
+        &:hover{
+          background: @pink url('../img/icons/soc-sprite.png') -300px  0 no-repeat;       
+        } 
+      }
+      &-mail{
+        background-position-x: -400px;
+        &:hover{
+          background: @pink url('../img/icons/soc-sprite.png') -400px  0 no-repeat;       
+        } 
+      }
+    }
+    &-link {
+      padding: 15px 10px 6px;
+      font-size: 0;
+    }
+  }
+}

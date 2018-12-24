@@ -1,0 +1,71 @@
+@import "layout/vars.less";
+@import "layout/normalize.less";
+@import "layout/fonts.less";
+@import "layout/animate.less";
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: url('../img/index/intro-logo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+  z-index: 0;
+  &.overlay:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(236, 30, 121, 0.15);
+    z-index: 1;
+  }
+}
+
+.fullwidth {
+  max-width: 600px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+}
+
+.container__page {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  z-index: 2;
+}
+
+.logo {
+  width: 161px;
+  height: 119px;
+  background: url('../img/index/logo.png') no-repeat;
+  margin-bottom: 30px;
+  z-index: 2;
+}
+
+.link {
+  width: 184px;
+  text-align: center;
+  background: none;
+  color: @pink;
+  font-family: @GothamPro, "Arial Narrow", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  border: 3px solid @pink;
+  padding: 13px 0;
+  z-index: 2;
+  text-decoration: none;
+  transition: .3s;
+  &:hover {
+    background: @pink;
+    color: #fff;
+  }
+}

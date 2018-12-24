@@ -1,0 +1,29 @@
+@import "../layout/vars.less";
+.breadcrumbs {
+  font-style: italic;
+  opacity: 0.8;
+  font-size: 14px;
+  margin: -2px 0 18px;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    &::after {
+      content: "/";
+      margin-right: 3px;
+    }
+    &:last-child::after {
+      display: none;
+    }
+    &-active {
+      .breadcrumbs__link {
+        text-decoration: none;
+        color: @text;
+      }
+    }
+  }
+  &__link {
+    text-decoration: underline;
+    color: @pink;
+  }
+}

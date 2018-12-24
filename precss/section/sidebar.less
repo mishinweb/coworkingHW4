@@ -1,0 +1,46 @@
+@import "../layout/vars.less";
+.menu {
+  &__item {
+    margin-bottom: 29px;
+    &-active,
+    &:hover {
+      .menu__icon {
+        filter: invert(30%) grayscale(100%) brightness(70%) contrast(4);
+      }
+      .menu__title {
+        color: #000;
+      }
+    }
+  }
+  &__icon {
+    transition: .5s;
+    width: 20px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 18px;
+    margin-top: -2px;
+    &-main {
+      background: url('../img/icons/main.png') center center no-repeat;
+    }
+    &-feed {
+      background: url('../img/icons/feed.png') center center no-repeat;
+    }
+    &-wallet {
+      background: url('../img/icons/wallet.png') center center no-repeat;
+    }
+  }
+  &__title {
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1.7;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    transition: .5s;
+  }
+  &__link {
+
+    display: flex;
+    align-items: center;
+    color: @pink;
+  }
+}
